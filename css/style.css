@@ -7,19 +7,20 @@ body {
     width:100%;
     height:80vh;
     background-color: #fff;
-    border: #aaa solid 0.1rem;
+    border: #1B264F solid 0.1rem;
     border-radius: 1rem;
 }
-
+/*left side */
 .chat-left {
-    border-right: #aaa solid 0.1rem;
+    border-right: #1B264F solid 0.1rem;
 }
-.chat-left .link {
+.chat-left .link ,.chat-right .header{
     width:100%;
-    height:75px;
-    border-bottom: #aaa solid 1px;  
+    height:8vh;
 }
-.chat-left .img-wrapper {
+
+
+.chat-left .img-wrapper,.chat-right .header .img-wrapper{
     display:inline-block;
     position: relative; 
     width:50px;
@@ -27,32 +28,101 @@ body {
     border-radius: 50%; 
     
 }
-.chat-left .img-wrapper img {
+.chat-left .img-wrapper img ,.chat-right .header .img-wrapper img {
     width:100%;
     height:auto; 
     border-radius: 50%;
-    border: #333 solid 0px;
+    border: #1B264F solid 0px;
 }
 
-.chat-left .info{
+.chat-left .info,.chat-right .header .info {
     display:inline-block;
     position: relative;
     top:12.5px;
     padding-left:0.7rem;    
 }
-.chat-left .info .name {
+.chat-left .info .name,.chat-right .header .info .name{
     display:block;
     font-weight: 600;
     font-size:1rem;
 }
-.chat-left .info .lmessage {
+.chat-left .info .lmessage,.chat-right .header .info .lmessage {
     display:block;
     font-size:1rem;
-    color:#333;
+    color:#1B264F;
     height:1rem;
 }
 
-
+/* Right side */
 .chat-right {
+    display:inline-block;
+    position: relative;  
+}
 
+.chat-right .messages {
+    overflow-y: scroll;
+    width:100%;
+    height: 66vh;
+    padding-right:1rem;
+}
+
+.chat-right .messages .message{
+    display:block; 
+    position: relative;
+    height:auto;
+    width:77%;
+    border-radius:1rem;
+    padding:0.7rem 0.7rem;
+    margin-top:0.5rem;
+}
+.chat-right .messages .message.me {
+    float:right; 
+    background: #274690;
+    color:#fff;
+}
+
+.chat-right .messages .message.other {
+    float:left;
+    background: #4C5760;
+    color:#fff;
+}
+
+.chat-right .footer{
+    width:100%;
+    height:4vh;
+    position: relative;
+    bottom: 0;
+    border-top: #1B264F solid 1px;  
+}
+
+.chat-right .footer{
+    width:100%;
+}
+.chat-right .footer input {
+    display: inline-block;
+
+    width:93%;
+    height:4vh;
+    margin:0;
+    padding:0;
+    position: absolute;
+    border:0;
+    left:0;
+    top:5px;
+}
+
+.chat-right .footer button {
+    display: inline-block;
+    width:4vh;
+    height:4vh;
+    margin:0;
+    color: #274690;
+    background-color: #fff;
+    border: 0;
+    border-radius: 50%;
+    border-left:0;
+    position: absolute;
+    right:0;
+    top:5px;
+    
 }
