@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <title>Chat Application</title>
 </head>
 <body>
@@ -13,7 +14,7 @@
     <div class="container">
         <h1>Chat Application</h1>
         <div class="chat-wrapper row" id="mychat">
-            <div class="chat-left col-5" >
+            <div class="chat-left col-4" >
                 <!--Fill with js-->
                 <div class="link" data-id="-1">
                     <div class="img-wrapper">
@@ -28,16 +29,51 @@
                         </span>
                     </div>
                 </div>
+
+                <div class="link" data-id="-1">
+                        <div class="img-wrapper">
+                            <img src="images/placeholder.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <span class="name">
+                                {My Name 2}
+                            </span>
+                            <span class="lmessage">
+                                {Hello its a me!}
+                            </span>
+                        </div>
+                    </div>
             </div>
-            <div class="chat-right col-7">
-                <div class="header">
-                    
+            <div class="chat-right col-8">
+                <div class="header" data-id="-1">
+                    <div class="img-wrapper">
+                        <img src="images/placeholder.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <span class="name">
+                            {My Name}
+                        </span>
+                        <span class="lmessage">
+                            {Online/Offline Last online 7 hours ago}
+                        </span>
+                    </div>
                 </div>
                 <div class="messages">
                     <!--Fill with js-->
-
-
+                    <span class="message me" data-id="1" >
+                        Hello my dude, me and the boys are hanging out, wanna join us ?
+                    </span>
+                    <span class="message other" data-id="2">
+                        hell yeah dude 
+                    </span>
+                    <span class="message me" data-id="1" >
+                        nice dude
+                    </span>
                 </div>
+                <form class="footer" id="chat-send-form">
+                    <input type="text"class="form-control" placeholder="Type you message here!">
+                    <button type="submit"><i class="fa fa-paper-plane"></i></button>
+                </form>
             </div>
         </div>
     </div>
